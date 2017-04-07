@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="gameover-window">
+      <div class="gameover-message">Player 1 <br> wins!</div>
+      <div class="gameover-menu">
+        <div class="menu-entry" id="gameover-restart"><div class="circle-selected" id="gameover-restart"></div>play again</div>
+        <div class="menu-entry" id="gameover-back"><div class="circle-selected"></div>back</div>
+      </div>
+    </div>
+    <div class="board">
+      <div class="field" id="f0"></div
+      ><div class="field" id="f1"></div
+      ><div class="field" id="f2"></div
+      ><div class="field" id="f3"></div
+      ><div class="field" id="f4"></div
+      ><div class="field" id="f5"></div
+      ><div class="field" id="f6"></div
+      ><div class="field" id="f7"></div
+      ><div class="field" id="f8"></div>
+    </div>
+    <div id="logo"><h1>XO</h1></div>
+    <div class="menu">
+      <div class="mp-menu-only">Player 1:</div>
+      <div class="menu-entry mode-selector" id="1player"><div class="circle-selected"></div>One Player</div>
+      <div class="menu-entry mode-selector" id="2player"><div class="circle-selected"></div>Two Player</div>
+      <div class="menu-entry char-selector" id="char-x"><div class="circle-selected"></div>X</div>
+      <div class="menu-entry char-selector" id="char-o"><div class="circle-selected"></div>O</div>
+    </div>
+  </div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
