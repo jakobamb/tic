@@ -1,10 +1,6 @@
 /**
 TODO:
 
-- ai should play when its her round (after tie)
-- instant feedback
-- back to menu -> change to original X/O headline
-
 */
 "use strict";
 //the gamemode
@@ -59,7 +55,9 @@ $(document).ready(function() {
                     turn: turn
                 }
                 var choice = ai.getChoice(game);
-                place(choice[1], choice[0], $("#" + board.getId(choice[1], choice[0]))[0]);
+                setTimeout(function () {
+                    place(choice[1], choice[0], $("#" + board.getId(choice[1], choice[0]))[0]);
+                }, 100);
             }
             clickLock = false;
         }
@@ -157,6 +155,7 @@ $(document).ready(function() {
     called when clicking "reset" in the game over menu
     */
     function resetAll() {
+        turn = 1;
         $('.board').css("display", "none");
         $('.board , .gameover-window , .mp-menu-only, .char-selector').css("display", "none");
         $('.mode-selector').css("display", "block");
