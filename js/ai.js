@@ -72,13 +72,4 @@ var ai = {
         console.log("best calculated placement: " + this.choice);
         return this.choice;
     },
-    play: function() {
-        //export current gameState
-        var game = {
-            state: board.state,
-            turn: turn
-        }
-        var choice = ai.getChoice(game);
-        place(choice[1], choice[0], $("#" + board.getId(choice[1], choice[0]))[0]);
-    }
 };
