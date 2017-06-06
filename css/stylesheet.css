@@ -68,13 +68,13 @@ h1 {
 
 .sign {
   pointer-events: none;
-  font-family: monospace;
+  font-family: 'PT Mono', monospace;
   width: 240px;
   height: 240px;
   text-align: center;
   float: left;
-  font-size: 380px;
-  line-height: 250px;
+  font-size: 330px;
+  line-height: 188px;
 }
 
 #f1, #f4, #f7{

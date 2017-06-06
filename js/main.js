@@ -11,8 +11,8 @@ var clickLock = false; //lock to prevent player from placing 2x while the ai is
 //computing the next step
 
 //html code for cross and circle
-var signCircle = '<div class="sign">&#9675</div>';
-var signCross = '<div class="sign">&#215</div>';
+var signCircle = '<div class="sign">o</div>';
+var signCross = '<div class="sign">x</div>';
 
 
 /**
